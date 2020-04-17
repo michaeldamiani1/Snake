@@ -13,15 +13,18 @@ public class Main {
         int start = 0;
         int end = 0;
 
-        System.out.print("What number would you like to start at? :");
+        System.out.print("Enter The first Number :");
         first = Integer.parseInt(in.nextLine());
-        System.out.print("What number would you like to end at? :");
+        System.out.print("Enter the second number :");
         second = Integer.parseInt(in.nextLine());
 
         start = Math.min(first,second);
         end = Math.max(first, second);
+        
+        start = start + 1;
+        end = end - 1;
 
-        for(int i = start; i >= end; i++){
+        for(int i = start; i <= end; i++){
             System.out.println(i);
         }//end for i
 
