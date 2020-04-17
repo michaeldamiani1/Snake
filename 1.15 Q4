@@ -1,0 +1,29 @@
+//Michael Damiani
+//April 14 2020
+//Modify #6 so that it does not matter what order the user types the numbers in.
+// i.e. your program should be able to handle the numbers if the first number is larger than the second, or vice versa.
+package com.company;
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int first = 0;
+        int second = 0;
+        int start = 0;
+        int end = 0;
+
+        System.out.print("What number would you like to start at? :");
+        first = Integer.parseInt(in.nextLine());
+        System.out.print("What number would you like to end at? :");
+        second = Integer.parseInt(in.nextLine());
+
+        start = Math.min(first,second);
+        end = Math.max(first, second);
+
+        for(int i = start; i >= end; i++){
+            System.out.println(i);
+        }//end for i
+
+    }
+}
