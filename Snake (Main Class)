@@ -1,0 +1,16 @@
+package snake;
+
+import javax.swing.*;
+
+public class Snake {
+
+    public static void main(String[] args){
+        JFrame frame = new JFrame("Snake");
+        Gameplay gameplay = new Gameplay();
+        frame.setBounds(10,10,700,600);
+        frame.setResizable(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        frame.add(gameplay);
+    }
+}
